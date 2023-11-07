@@ -1,9 +1,9 @@
 import { useWallet } from "@coin98t/wallet-adapter-react";
 import { useState } from "react";
 import Web3 from "web3";
-import { TransactionConfig } from "web3-core";
 import CustomButton from "./ui/custom-button";
 import ResultTxt from "./ui/resultTxt";
+import { Transaction } from "web3-types";
 
 const ContentBNBTest = () => {
   //Constant
@@ -106,7 +106,7 @@ const ContentBNBTest = () => {
   };
 
   const handleSendToken = async () => {
-    const transactionParameters: TransactionConfig = {
+    const transactionParameters: Transaction = {
       to: recipientAddress,
       from: address!,
       value: "0x" + Number(0.0000001 * 1e18).toString(16),
@@ -122,7 +122,7 @@ const ContentBNBTest = () => {
     const contract = new web3Test.eth.Contract(abi as any, contractAddress);
     const data = await (contract as any).methods["set"]("ChiPoPo").encodeABI();
 
-    const transactionParameters: TransactionConfig = {
+    const transactionParameters: Transaction = {
       to: contractAddress,
       from: address!,
       value: "0x0",
