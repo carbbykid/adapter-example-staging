@@ -1,11 +1,11 @@
 "use client";
 
-import { ChainInfo, evmChains } from "@coin98t/wallet-adapter-react-ui";
+import { ChainInfo, evmChains } from "@coin98/wallet-adapter-react-ui";
 import dynamic from "next/dynamic";
 import React from "react";
 
 const WalletModalC98 = dynamic(
-  async () => (await import("@coin98t/wallet-adapter-react-ui")).WalletModalC98,
+  async () => (await import("@coin98/wallet-adapter-react-ui")).WalletModalC98,
   {
     ssr: false,
   }

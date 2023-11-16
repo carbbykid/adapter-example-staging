@@ -1,12 +1,9 @@
 "use client";
 
-import {
-  BLOCKCHAINS_DATA,
-  WalletProvider,
-} from "@coin98t/wallet-adapter-react";
-import { WalletModalProvider } from "@coin98t/wallet-adapter-react-ui";
-import { Coin98WalletAdapter } from "@coin98t/wallet-adapter-coin98";
-import { MetaMaskWalletAdapter } from "@coin98t/wallet-adapter-metamask";
+import { BLOCKCHAINS_DATA, WalletProvider } from "@coin98/wallet-adapter-react";
+import { WalletModalProvider } from "@coin98/wallet-adapter-react-ui";
+import { Coin98WalletAdapter } from "@coin98/wallet-adapter-coin98";
+import { MetaMaskWalletAdapter } from "@coin98/wallet-adapter-metamask";
 
 interface ContainerProps {
   children: React.ReactNode;

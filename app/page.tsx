@@ -3,8 +3,8 @@ import ContentBNBTest from "@/components/bnbtestnet-section";
 import ContentEvm from "@/components/evm-section";
 import Container from "@/components/ui/container";
 import CustomButton from "@/components/ui/custom-button";
-import { useWallet } from "@coin98t/wallet-adapter-react";
-import { useWalletModal } from "@coin98t/wallet-adapter-react-ui";
+import { useWallet } from "@coin98/wallet-adapter-react";
+import { useWalletModal } from "@coin98/wallet-adapter-react-ui";
 import { LogOut, MoonStar, Sun, Wallet } from "lucide-react";
 import { useEffect, useState } from "react";
 

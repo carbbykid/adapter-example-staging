@@ -1,4 +1,4 @@
-import { useWallet } from "@coin98t/wallet-adapter-react";
+import { useWallet } from "@coin98/wallet-adapter-react";
 import { useState } from "react";
 import Web3 from "web3";
 import CustomButton from "./ui/custom-button";
